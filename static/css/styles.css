@@ -10,6 +10,44 @@ section {
     /* Adjust this value based on your navbar's height */
 }
 
+/* Default link styling */
+.nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+/* Black underline animation */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black; /* Set underline to black */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: center;
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+/* When the link is active, underline it */
+.nav-link.active::after {
+    transform: scaleX(1); /* Expand underline when active */
+    transform-origin: center;
+}
+
+/* Change text color on hover without underline */
+.nav-link:hover {
+    color: black; /* Text color goes black on hover */
+}
+
+/* Ensure the underline only appears on active (or hover if you prefer) */
+.nav-link.active::after,
+.nav-link.active {
+    color: black; /* Text goes black when active */
+}
+
 /* Media Query for Extra Small Devices (Mobile Phones) */
 @media (max-width: 576px) {
     .navbar-brand {
@@ -138,7 +176,7 @@ section {
     /* Set a fixed height for the blog hero section */
     background-color: transparent;
     overflow: hidden;
-    margin-top: 80px;
+    margin-top: 60px;
     /* Adjust based on your navbar's height */
 }
 

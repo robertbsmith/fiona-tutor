@@ -27,17 +27,19 @@ writer."
 
         <!-- Post Excerpt -->
         <div>
-            {% assign excerpt_length = 2000 %} <!-- Set the maximum number of characters for the excerpt -->
-
-            {% if post.content.size > excerpt_length %}
-            <!-- Display truncated content with "Read more" link, keeping HTML -->
-            {{ post.content | truncatewords: excerpt_length }}
-            <a href="{{ post.url | relative_url }}">Read more</a>
+            {% assign excerpt_length = 2000 %}
+            {% assign content_strip = post.content %}
+            {% assign content_size = content_strip | size %}
+            
+            {% if content_size > excerpt_length %}
+              {% assign truncated_content = content_strip | truncate: excerpt_length, "" %}
+              {{ truncated_content }}...
+              <a href="{{ post.url | relative_url }}" aria-label="Continue reading '{{ post.title }}'">
+                Continue reading <span class="sr-only">'{{ post.title }}'</span>
+              </a>
             {% else %}
-            <!-- If content is within the limit, display full content -->
-            {{ post.content }}
+              {{ post.content }}
             {% endif %}
-        </div>
     </article>
     {% endfor %}
 </div>
