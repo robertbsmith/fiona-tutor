@@ -2,3 +2,4 @@
 permalink: /blog/:year/:month/:day/:title.html
 title: Fiona Hennessy Tutoring
 description: "Fiona Hennessy offers expert Geography tutoring for A-Level and GCSE students with a focus on exam success and pupil progress."
+exclude: ["README.md"]
