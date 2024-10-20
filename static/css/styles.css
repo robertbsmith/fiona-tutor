@@ -53,11 +53,24 @@ section {
 }
 
 /* Hero Section */
+
 .hero {
     width: 100vw;
     height: 100vh;
-    background: url('../images/hero.webp') center center/cover no-repeat;
     position: relative;
+    background: #f0f0f0 url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAaACgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAQX/xAAcEAACAgMBAQAAAAAAAAAAAAAAAQRRAxJhERP/xAAXAQEAAwAAAAAAAAAAAAAAAAAAAQID/8QAFhEBAQEAAAAAAAAAAAAAAAAAABES/9oADAMBAAIRAxEAPwDrbBsSLOrGWZWVy2U+m7Ev2VmPOrEFWwEbzqwEHLUjo6kdIUMjVSrXI6I5HSZiMgqlyHYEoBFf/9k=') center center/cover no-repeat;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/hero.webp') center center/cover no-repeat;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .hero .overlay {
@@ -84,6 +97,15 @@ section {
     font-size: 1.5rem;
     margin-bottom: 2em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* This will trigger the fade-in of the high-quality image once it's loaded */
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.hero::before {
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 /* About Section */
