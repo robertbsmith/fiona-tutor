@@ -1,0 +1,41 @@
+---
+layout: default
+title: Blog
+---
+
+<!-- Hero Parallax Section -->
+<section class="hero-parallax blog-hero-parallax">
+  <div class="parallax-background"></div>
+  <h1 class="parallax-section-title">Fiona's Blog</h1>
+</section>
+
+<div class="container py-5">
+    {% for post in site.posts %}
+        <article class="mb-5">
+            <!-- Post Title -->
+            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+
+            <!-- Post Date and Author -->
+            <p class="text-muted">
+                {{ post.date | date: "%B %-d, %Y" }}
+                {% if post.author %}
+                    | {{ post.author }}
+                {% endif %}
+            </p>
+
+            <!-- Post Excerpt -->
+            <div>
+                {% assign excerpt_length = 2000 %} <!-- Set the maximum number of characters for the excerpt -->
+
+                {% if post.content.size > excerpt_length %}
+                    <!-- Display truncated content with "Read more" link, keeping HTML -->
+                    {{ post.content | truncatewords: excerpt_length }}
+                    <a href="{{ post.url | relative_url }}">Read more</a>
+                {% else %}
+                    <!-- If content is within the limit, display full content -->
+                    {{ post.content }}
+                {% endif %}
+            </div>
+        </article>
+    {% endfor %}
+</div>

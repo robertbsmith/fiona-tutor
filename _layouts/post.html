@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<!-- Hero Parallax Section -->
+<section class="hero-parallax blog-hero-parallax">
+    <div class="parallax-background"></div>
+    <h1 class="parallax-section-title">{{ page.title }}</h1>
+</section>
+
+<div class="container py-5">
+    <article>
+        <!-- Back to Blog Link -->
+        <p><a href="{{ '/blog/' | relative_url }}" class="back-to-blog">&larr; Back to Blog</a></p>
+
+        <!-- Post Metadata -->
+        <p class="post-meta">
+            {{ page.date | date: "%B %-d, %Y" }}
+            {% if page.author %}
+                | By {{ page.author }}
+            {% endif %}
+        </p>
+
+        <!-- Post Content -->
+        {{ content }}
+    </article>
+</div>

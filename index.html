@@ -1,601 +1,507 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Home
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiona Hennessy Tutoring</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/styles.css">
-    <style>
+<!-- Hero Section -->
+<section
+    class="hero text-white text-center d-flex flex-column justify-content-center align-items-center position-relative">
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+    <div class="container-fluid position-relative">
+        <h1 class="display-4 fw-bold">Fiona Hennessy Tutoring</h1>
+        <p class="lead mb-4">Providing Quality Geography Tutoring to A-Level and GCSE Students</p>
+        <a href="#contact" class="btn btn-lg btn-primary">Contact Fiona</a>
+    </div>
+</section>
 
-    </style>
-</head>
-
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container">
-            <i class="bi bi-globe-europe-africa me-2 d-none d-lg-inline"></i>
-            <a class="navbar-brand fw-semibold" href="#">Fiona Hennessy Tutoring</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active ms-3" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link ms-3" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link ms-3" href="#pricing">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link ms-3" href="#resources">Resources</a></li>
-                    <li class="nav-item"><a class="nav-link ms-3" href="#testimonials">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link ms-3" href="#safeguarding">Safeguarding</a></li>
-                    <li class="nav-item"><a class="nav-link ms-3" href="#contact">Contact</a></li>
-                </ul>
+<!-- About Section -->
+<section class="about py-5" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Desktop Image -->
+            <div class="col-lg-5 mb-4 d-none d-lg-block">
+                <img src="{{ '/static/images/fiona.webp' | relative_url }}" alt="Fiona Hennessy"
+                    class="img-fluid rounded shadow">
+            </div>
+            <!-- Content -->
+            <div class="col-lg-7">
+                <h2 class="fw-semibold mb-4">About Me</h2>
+                <!-- Mobile Image -->
+                <div class="d-block d-lg-none mb-4 text-center">
+                    <img src="{{ '/static/images/fiona-small.png' | relative_url }}" alt="Fiona Hennessy"
+                        class="img-fluid rounded-circle shadow" style="width: 150px; height: 150px; object-fit: cover;">
+                </div>
+                <p class="lh-lg">Geography teacher, published revision resources writer, lead exam writer for a major
+                    exam board,
+                    and experienced Head of Department offering tutoring/homeschool curriculum planning and
+                    resources. Excellent track record of exam success and pupil progress.</p>
+                <p class="lh-lg">I am a passionate and experienced geography teacher with 10 years of formal teaching
+                    experience
+                    and many more years of coaching and tutoring. I most recently served as the Head of Geography at
+                    a secondary school in Nottingham but have recently relocated to Norwich. I currently also work
+                    as a Lead Exam Writer for a major exam board and as a writer of published revision materials for
+                    a leading support service for A-Level, GCSE, and Vocational students and teachers.</p>
+                <p class="lh-lg">I have a full and current DBS so that you can be confident in a safe and professional
+                    learning
+                    environment. <a href="#safeguarding">See more about safeguarding.</a></p>
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <!-- Hero Section -->
-    <section
-        class="hero text-white text-center d-flex flex-column justify-content-center align-items-center position-relative">
-        <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
-        <div class="container-fluid position-relative">
-            <h1 class="display-4 fw-bold">Fiona Hennessy Tutoring</h1>
-            <p class="lead mb-4">Providing Quality Geography Tutoring to A-Level and GCSE Students</p>
-            <a href="#contact" class="btn btn-lg btn-primary">Contact Fiona</a>
-        </div>
-    </section>
+<!-- Experience Section -->
+<section class="experience mb-5" id="experience">
+    <div class="container">
+        <h2 class="fw-semibold mb-3">My Experience</h2>
 
-    <!-- About Section -->
-    <section class="about py-5" id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-4 d-none d-lg-block">
-                    <img src="static/images/fiona.webp" alt="Fiona Hennessy" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-lg-7">
-                    <h2 class="fw-semibold mb-4">About Me</h2>
-                    <!-- Secondary Image for Small Screens -->
-                    <div class="d-block d-lg-none mb-4 text-center">
-                        <img src="static/images/fiona-small.png" alt="Fiona Hennessy" class="img-fluid rounded-circle shadow" style="width: 150px; height: 150px; object-fit: cover;">
+        <div class="container mb-3">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-center align-middle shadow-sm">
+                            <thead class="bg-primary text-white">
+                                <tr>
+                                    <th scope="col">Exam Board</th>
+                                    <th scope="col" class="text-nowrap">A-Level</th>
+                                    <th scope="col">GCSE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- AQA Row -->
+                                <tr class="bg-light">
+                                    <td class="d-flex justify-content-center align-items-center">
+                                        <img src="{{ '/static/images/AQA_logo.svg' | relative_url }}" alt="AQA"
+                                            class="img-fluid exam-board-logo">
+                                    </td>
+                                    <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+                                </tr>
+                                <!-- Edexcel Row -->
+                                <tr>
+                                    <td class="d-flex justify-content-center align-items-center">
+                                        <img src="{{ '/static/images/edexcel.png' | relative_url }}" alt="Edexcel"
+                                            class="img-fluid exam-board-logo">
+                                    </td>
+                                    <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+                                </tr>
+                                <!-- OCR Row -->
+                                <tr class="bg-light">
+                                    <td class="d-flex justify-content-center align-items-center">
+                                        <img src="{{ '/static/images/OCR.png' | relative_url }}" alt="OCR"
+                                            class="img-fluid exam-board-logo">
+                                    </td>
+                                    <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+                                </tr>
+                                <!-- Cambridge International Row -->
+                                <tr>
+                                    <td class="d-flex justify-content-center align-items-center">
+                                        <img src="{{ '/static/images/cambridge-international.png' | relative_url }}"
+                                            alt="Cambridge International" class="img-fluid exam-board-logo">
+                                    </td>
+                                    <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+                                </tr>
+                                <!-- Other Exam Boards -->
+                                <tr class="bg-light">
+                                    <td>Others upon request</td>
+                                    <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+                                    <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <p class="lh-lg">Geography teacher, published revision resources writer, lead exam writer for a major exam board,
-                        and experienced Head of Department offering tutoring/homeschool curriculum planning and
-                        resources. Excellent track record of exam success and pupil progress.</p>
-                    <p class="lh-lg">I am a passionate and experienced geography teacher with 10 years of formal teaching experience
-                        and many more years of coaching and tutoring. I most recently served as the Head of Geography at
-                        a secondary school in Nottingham but have recently relocated to Norwich. I currently also work
-                        as a Lead Exam Writer for a major exam board and as a writer of published revision materials for
-                        a leading support service for A-Level, GCSE, and Vocational students and teachers.</p>
-                    <p class="lh-lg">I have a full and current DBS so that you can be confident in a safe and professional learning
-                        environment. <a href="#safeguarding">See more about safeguarding.</a></p>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section class="experience mb-5" id="experience">
-        <div class="container">
-            <h2 class="fw-semibold mb-3">My Experience</h2>
+        <!-- Results -->
+        <h3 class="fw-semibold">Results</h3>
+        <p>The goal of tuition is to make significant progress with your pupil, wherever their starting point is.
+            The mark of a good teacher is how much progress a pupil makes in comparison to the expected progress for
+            their age and ability. This is often measured by comparing a pupil's exam results with their expected
+            grades that they receive when entering secondary school.</p>
+        <ul class="list-unstyled">
+            <li><i class="bi bi-graph-up-arrow text-primary me-2 fs-5"></i>GCSE pupils that took my class achieved
+                <strong>2.42 grades higher</strong> than they would have with an average UK teacher.
+            </li>
+            <li><i class="bi bi-graph-up-arrow text-primary me-2 fs-5"></i><strong>89%</strong> of my A-level students
+                have received <strong>A*-B</strong>, and none have failed.</li>
+            <li><i class="bi bi-graph-up-arrow text-primary me-2 fs-5"></i>In the 2022-2023 private tutoring cohort, all
+                of my GCSE or A-Level students that were with me for more than 8 sessions were on or above target
+                grade, with some students achieving up to <strong>2 grades higher</strong> at A-Level.</li>
+        </ul>
+        <p>These results include pupils with Special Education Needs and Disabilities, pupils with English as an
+            additional language, pupils with mental health, emotional and social needs, gifted and talented
+            pupils/high ability pupils, and pupils who find it difficult to adapt their way of thinking and
+            behaviour to conventional education settings.</p>
+    </div>
 
-            <div class="container mb-3">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="table-responsive">
-                            <table class="table table-bordered text-center align-middle shadow-sm">
-                                <thead class="bg-primary text-white">
-                                    <tr>
-                                        <th scope="col">Exam Board</th>
-                                        <th scope="col" class="text-nowrap">A-Level</th>
-                                        <th scope="col">GCSE</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- AQA Row -->
-                                    <tr class="bg-light">
-                                        <td class="d-flex justify-content-center align-items-center">
-                                            <img src="static/images/AQA_logo.svg" alt="AQA"
-                                                class="img-fluid exam-board-logo">
-                                        </td>
-                                        <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                                        <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                                    </tr>
-                                    <!-- Edexcel Row -->
-                                    <tr>
-                                        <td class="d-flex justify-content-center align-items-center">
-                                            <img src="static/images/edexcel.png" alt="Edexcel"
-                                                class="img-fluid exam-board-logo">
-                                        </td>
-                                        <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                                        <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                                    </tr>
-                                    <!-- OCR Row -->
-                                    <tr class="bg-light">
-                                        <td class="d-flex justify-content-center align-items-center">
-                                            <img src="static/images/OCR.png" alt="OCR"
-                                                class="img-fluid exam-board-logo">
-                                        </td>
-                                        <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                                        <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                                    </tr>
-                                    <!-- Cambridge International Row -->
-                                    <tr>
-                                        <td class="d-flex justify-content-center align-items-center">
-                                            <img src="static/images/cambridge-international.png"
-                                                alt="Cambridge International" class="img-fluid exam-board-logo">
-                                        </td>
-                                        <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                                        <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                                    </tr>
-                                    <!-- Other Exam Boards -->
-                                    <tr class="bg-light">
-                                        <td>Others upon request</td>
-                                        <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                                        <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+    <div class="container">
+        <!-- Head of Geography and Curriculum Writing -->
+        <h3 class="fw-semibold">Head of Geography and Curriculum Writing</h3>
+        <p>In my time as Head of Geography, I made a culture of progress the top priority in my department. The
+            resources and routines I developed to do this will be accessible to and tailored to your child's needs.
+            In my time in this role, I also trained other teachers in the beginning years. I have also been employed
+            in the private sector (Bromsgrove School) to plan and deliver revision intensive courses to ensure
+            short-term progress before the exam season.</p>
+        <p>I can offer personalised schemes of work for homeschooled students using my experience; an Ofsted
+            inspector during a 'deep-dive' has recently graded the 7-year curriculum overhaul in Geography in my
+            former department as 'phenomenal'.</p>
+
+        <!-- Lead Assessment Writer -->
+        <h3 class="fw-semibold">Lead Assessment Writer, Published Resources Authoring Experience, and Examiner Training
+        </h3>
+        <p>I work with outside agencies to create and deliver exam revision content and have presented both in
+            online and in-person workshops nationwide. I have also written published content guides on answering
+            exam questions at A-level. As well as training and experience as an examiner, I am also a Lead
+            Assessment Writer for a major exam board writing the exam paper and mark scheme.</p>
+
+        <!-- Education -->
+        <h3 class="fw-semibold">Education</h3>
+        <p>I hold a 2:1 BSc (Hons) in Geography from the University of Nottingham and studied a range of Geography
+            topics and a PGCE (with Merit) also from the University of Nottingham. Previously I attended Bexley
+            Grammar School in London, studying A-levels in Geography, English Literature, Drama and Theatre Studies,
+            and Biology whilst voluntarily opting to study a GCSE in Geology to satisfy personal interest.</p>
+        <p>In the year following University, I worked as an au-pair teaching English in Italy, travelled South
+            Africa, and worked as a nanny and tutor in Central London. Throughout University and school, I worked as
+            a swimming teacher and coach for 2 to 18-year-olds.</p>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="hero-parallax" id="pricing">
+    <div class="parallax-background"></div>
+    <div class="pricing-container">
+        <div class="container mt-5 mb-5">
+            <h2 class="parallax-section-title">Pricing</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <div class="card-body d-flex flex-column justify-content-between h-100">
+                            <h3 class="card-title fw-semibold">1-2-1 Online Tutoring</h3>
+                            <h4 class="card-subtitle mb-2">
+                                £80<span class="price-period">Per Session</span>
+                            </h4>
+                            <p class="card-text">
+                                Price includes 1-hour tutoring session and planning personalised
+                                content from the personal learning checklists sent out before the first lesson,
+                                short and long-term schemes of work, and marking. Includes homework if required.
+                                Full reports upon request of progress and contactable anytime.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <div class="card-body d-flex flex-column justify-content-between h-100">
+                            <h3 class="card-title fw-semibold">Small Group Tutoring</h3>
+                            <h4 class="card-subtitle mb-2">
+                                £120<span class="price-period">Per Session</span>
+                            </h4>
+                            <p class="card-text">
+                                Up to 4 pupils in the same exam cohort. Price includes 1-hour
+                                tutoring session and planning personalised content, scheme of work, and marking work
+                                produced by the pupils.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 overflow-hidden">
+                        <div class="card-body d-flex flex-column justify-content-between h-100">
+                            <h3 class="card-title fw-semibold">Resource Development and Marking</h3>
+                            <h4 class="card-subtitle mb-2">
+                                £50<span class="price-period">Per Hour</span>
+                            </h4>
+                            <p class="card-text">
+                                Schemes of work for home learning pupils, exam preparation such as
+                                practice papers and personalised exam creation, and anything else you might need.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Results -->
-            <h3 class="fw-semibold">Results</h3>
-            <p>The goal of tuition is to make significant progress with your pupil, wherever their starting point is.
-                The mark of a good teacher is how much progress a pupil makes in comparison to the expected progress for
-                their age and ability. This is often measured by comparing a pupil's exam results with their expected
-                grades that they receive when entering secondary school.</p>
-            <ul class="list-unstyled">
-                <li><i class="bi bi-graph-up-arrow text-primary me-2 fs-5"></i>GCSE pupils that took my class achieved
-                    <strong>2.42 grades higher</strong> than they would have with an average UK teacher.
-                </li>
-                <li><i class="bi bi-graph-up-arrow text-primary me-2 fs-5"></i><strong>89%</strong> of my A-level students
-                    have received <strong>A*-B</strong>, and none have failed.</li>
-                <li><i class="bi bi-graph-up-arrow text-primary me-2 fs-5"></i>In the 2022-2023 private tutoring cohort, all
-                    of my GCSE or A-Level students that were with me for more than 8 sessions were on or above target
-                    grade, with some students achieving up to <strong>2 grades higher</strong> at A-Level.</li>
-            </ul>
-            <p>These results include pupils with Special Education Needs and Disabilities, pupils with English as an
-                additional language, pupils with mental health, emotional and social needs, gifted and talented
-                pupils/high ability pupils, and pupils who find it difficult to adapt their way of thinking and
-                behaviour to conventional education settings.</p>
         </div>
+    </div>
 
-        <div class="container">
-            <!-- Head of Geography and Curriculum Writing -->
-            <h3 class="fw-semibold">Head of Geography and Curriculum Writing</h3>
-            <p>In my time as Head of Geography, I made a culture of progress the top priority in my department. The
-                resources and routines I developed to do this will be accessible to and tailored to your child's needs.
-                In my time in this role, I also trained other teachers in the beginning years. I have also been employed
-                in the private sector (Bromsgrove School) to plan and deliver revision intensive courses to ensure
-                short-term progress before the exam season.</p>
-            <p>I can offer personalised schemes of work for homeschooled students using my experience; an Ofsted
-                inspector during a 'deep-dive' has recently graded the 7-year curriculum overhaul in Geography in my
-                former department as 'phenomenal'.</p>
+</section>
 
-            <!-- Lead Assessment Writer -->
-            <h3 class="fw-semibold">Lead Assessment Writer, Published Resources Authoring Experience, and Examiner Training</h3>
-            <p>I work with outside agencies to create and deliver exam revision content and have presented both in
-                online and in-person workshops nationwide. I have also written published content guides on answering
-                exam questions at A-level. As well as training and experience as an examiner, I am also a Lead
-                Assessment Writer for a major exam board writing the exam paper and mark scheme.</p>
+<!-- Tutoring Approach Section -->
+<section class="tutoring-approach py-5" id="approach">
+    <div class="container">
+        <h2 class="mb-3 fw-semibold">My Tutoring Approach</h2>
+        <p>Coaching, questioning, and effective modelling and feedback, as well as metacognition (how to help pupils
+            transmit their knowledge and understanding across tasks and contexts, and linking prior learning to be
+            successful in future learning) and study skills throughout the process, are the strengths to my teaching
+            and to success for your child. In this current climate (and with the right educator with the right
+            tools), online sessions can be as equally effective as in-person sessions. I do not have a preference
+            either way as different methods suit different children and parent/guardian contexts.</p>
+        <p>Quality Geography education is more important than ever. The increased pressure on children to excel
+            equally in these subjects, and with the additional context of the pandemic, may mean that they require
+            additional support. I would be happy to supply friendly, creative, and dynamic 1-1 or group tutoring
+            time to build their confidence and academic success. Homework, grading/feedback, and assessments can be
+            included in your tutoring plan if that suits your needs.</p>
+        <p>I believe that my fresh and successful teaching knowledge, experience with a wide variety of learning
+            needs and difficulties, and expansive and effective resources will allow us to arrange the experience
+            that best suits your needs.</p>
+        <p>Editable Personal Learning Checklists (PLCs), glossaries, and personalised homework available for each
+            student.</p>
+    </div>
+</section>
 
-            <!-- Education -->
-            <h3 class="fw-semibold">Education</h3>
-            <p>I hold a 2:1 BSc (Hons) in Geography from the University of Nottingham and studied a range of Geography
-                topics and a PGCE (with Merit) also from the University of Nottingham. Previously I attended Bexley
-                Grammar School in London, studying A-levels in Geography, English Literature, Drama and Theatre Studies,
-                and Biology whilst voluntarily opting to study a GCSE in Geology to satisfy personal interest.</p>
-            <p>In the year following University, I worked as an au-pair teaching English in Italy, travelled South
-                Africa, and worked as a nanny and tutor in Central London. Throughout University and school, I worked as
-                a swimming teacher and coach for 2 to 18-year-olds.</p>
+<!-- Resource Examples Section -->
+<section class="resource-examples mb-5" id="resources">
+    <div class="container">
+        <h2 class="mb-3 fw-semibold">Resource Examples</h2>
+        <p class="mb-3">Below I've included some examples of resources I have made for pupils.</p>
 
-        </div>
-    </section>
-
-    <section class="hero-parallax" id="pricing">
-        <div class="parallax-background"></div>
-        <div class="pricing-container">
-            <div class="container mt-5 mb-5">
-                <h2 class="parallax-section-title">Pricing</h2>
-                <div class="row">
-                    <!-- Card 1 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm border-0 overflow-hidden">
-                            <div class="card-body d-flex flex-column justify-content-between h-100">
-                                <h3 class="card-title fw-semibold">1-2-1 Online Tutoring</h3>
-                                <h4 class="card-subtitle mb-2">
-                                    £80<span class="price-period">Per Session</span>
-                                </h4>
-                                <p class="card-text">
-                                    Price includes 1-hour tutoring session and planning personalised
-                                    content from the personal learning checklists sent out before the first lesson,
-                                    short and long-term schemes of work, and marking. Includes homework if required.
-                                    Full reports upon request of progress and contactable anytime.
-                                </p>
+        <div class="accordion" id="resourceAccordion">
+            <!-- Lessons Accordion Item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingLessons">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseLessons" aria-expanded="true" aria-controls="collapseLessons">
+                        Lessons
+                    </button>
+                </h2>
+                <div id="collapseLessons" class="accordion-collapse collapse show" aria-labelledby="headingLessons"
+                    data-bs-parent="#resourceAccordion">
+                    <div class="accordion-body">
+                        <div class="row g-4">
+                            <!-- Example A-Level Lesson on Regeneration -->
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Example A-Level Lesson on Regeneration</h5>
+                                        <p class="card-text">Lesson on Regeneration for an Edexcel A-Level student after
+                                            consulting the PLC and creating a scheme of work to address the gaps.</p>
+                                        <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_Example_Regeneration_Lesson.pdf' | relative_url }}"
+                                            class="btn btn-outline-primary mt-auto" download>
+                                            <i class="bi bi-download me-2"></i>Download PDF
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- Example GCSE Lesson on Settlement -->
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">Example GCSE Lesson on Settlement</h5>
+                                        <p class="card-text">Lesson on Settlement for an Edexcel IGCSE student after
+                                            consulting the PLC and creating a scheme of work to address the gaps.</p>
+                                        <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_GCSE_Example_Lesson_Settlement.pdf' | relative_url }}"
+                                            class="btn btn-outline-primary mt-auto" download>
+                                            <i class="bi bi-download me-2"></i>Download PDF
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more lesson cards as needed -->
                         </div>
                     </div>
-                    <!-- Card 2 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm border-0 overflow-hidden">
-                            <div class="card-body d-flex flex-column justify-content-between h-100">
-                                <h3 class="card-title fw-semibold">Small Group Tutoring</h3>
-                                <h4 class="card-subtitle mb-2">
-                                    £120<span class="price-period">Per Session</span>
-                                </h4>
-                                <p class="card-text">
-                                    Up to 4 pupils in the same exam cohort. Price includes 1-hour
-                                    tutoring session and planning personalised content, scheme of work, and marking work
-                                    produced by the pupils.
-                                </p>
+                </div>
+            </div>
+
+            <!-- Personal Learning Checklist (PLC) Accordion Item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingPLC">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsePLC" aria-expanded="false" aria-controls="collapsePLC">
+                        Personal Learning Checklist (PLC)
+                    </button>
+                </h2>
+                <div id="collapsePLC" class="accordion-collapse collapse" aria-labelledby="headingPLC"
+                    data-bs-parent="#resourceAccordion">
+                    <div class="accordion-body">
+                        <div class="row g-4">
+                            <!-- A-Level Water and Carbon Cycles PLC -->
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">A-Level Water and Carbon Cycles PLC</h5>
+                                        <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_Water_and_Carbon_Cycles_Specification_Content_PLC.pdf' | relative_url }}"
+                                            class="btn btn-outline-primary mt-auto" download>
+                                            <i class="bi bi-download me-2"></i>Download PDF
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- GCSE Hazardous Earth PLC -->
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">GCSE Hazardous Earth PLC</h5>
+                                        <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_Hazardous_Earth_PLC.pdf' | relative_url }}"
+                                            class="btn btn-outline-primary mt-auto" download>
+                                            <i class="bi bi-download me-2"></i>Download PDF
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more PLC cards as needed -->
                         </div>
                     </div>
-                    <!-- Card 3 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm border-0 overflow-hidden">
-                            <div class="card-body d-flex flex-column justify-content-between h-100">
-                                <h3 class="card-title fw-semibold">Resource Development and Marking</h3>
-                                <h4 class="card-subtitle mb-2">
-                                    £50<span class="price-period">Per Hour</span>
-                                </h4>
-                                <p class="card-text">
-                                    Schemes of work for home learning pupils, exam preparation such as
-                                    practice papers and personalised exam creation, and anything else you might need.
-                                </p>
+                </div>
+            </div>
+
+            <!-- Quizzes and Other Resources Accordion Item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingQuizzes">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseQuizzes" aria-expanded="false" aria-controls="collapseQuizzes">
+                        Quizzes & Other Resources
+                    </button>
+                </h2>
+                <div id="collapseQuizzes" class="accordion-collapse collapse" aria-labelledby="headingQuizzes"
+                    data-bs-parent="#resourceAccordion">
+                    <div class="accordion-body">
+                        <div class="row g-4">
+                            <!-- GCSE Urban Environment Glossary -->
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">GCSE Urban Environment Glossary</h5>
+                                        <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_Urban_Environments_Glossary.pdf' | relative_url }}"
+                                            class="btn btn-outline-primary mt-auto" download>
+                                            <i class="bi bi-download me-2"></i>Download PDF
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- A-Level Coast Quiz -->
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">A-Level Coast Quiz</h5>
+                                        <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_Example_Coasts_Quiz.pdf' | relative_url }}"
+                                            class="btn btn-outline-primary mt-auto" download>
+                                            <i class="bi bi-download me-2"></i>Download PDF
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- A-Level Exam Practice Migration -->
+                            <div class="col-md-6">
+                                <div class="card h-100 shadow-sm">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">A-Level Exam Practice Migration</h5>
+                                        <p class="card-text">Pupil requested exam practice on this topic, so this
+                                            question was created for timed practice and immediate feedback.</p>
+                                        <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_Example_Exam_Practise_Migration.pdf' | relative_url }}"
+                                            class="btn btn-outline-primary mt-auto" download>
+                                            <i class="bi bi-download me-2"></i>Download PDF
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more quizzes/resources as needed -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </section>
+</section>
 
-    <!-- My Tutoring Approach Section -->
-    <section class="tutoring-approach py-5" id="approach">
+<!-- Testimonials Section -->
+<section class="hero-parallax py-5" id="testimonials">
+    <div class="parallax-background"></div>
+    <div class="testimonials-overlay">
         <div class="container">
-            <h2 class="mb-3 fw-semibold">My Tutoring Approach</h2>
-            <p>Coaching, questioning, and effective modelling and feedback, as well as metacognition (how to help pupils
-                transmit their knowledge and understanding across tasks and contexts, and linking prior learning to be
-                successful in future learning) and study skills throughout the process, are the strengths to my teaching
-                and to success for your child. In this current climate (and with the right educator with the right
-                tools), online sessions can be as equally effective as in-person sessions. I do not have a preference
-                either way as different methods suit different children and parent/guardian contexts.</p>
-            <p>Quality Geography education is more important than ever. The increased pressure on children to excel
-                equally in these subjects, and with the additional context of the pandemic, may mean that they require
-                additional support. I would be happy to supply friendly, creative, and dynamic 1-1 or group tutoring
-                time to build their confidence and academic success. Homework, grading/feedback, and assessments can be
-                included in your tutoring plan if that suits your needs.</p>
-            <p>I believe that my fresh and successful teaching knowledge, experience with a wide variety of learning
-                needs and difficulties, and expansive and effective resources will allow us to arrange the experience
-                that best suits your needs.</p>
-            <p>Editable Personal Learning Checklists (PLCs), glossaries, and personalised homework available for each
-                student.</p>
-        </div>
-    </section>
-
-
-    <!-- Resource Examples Section with Accordion -->
-    <section class="resource-examples mb-5" id="resources">
-        <div class="container">
-            <h2 class="mb-3 fw-semibold">Resource Examples</h2>
-            <p class="mb-3">Below I've included some examples of resources I have made for pupils.</p>
-
-            <div class="accordion" id="resourceAccordion">
-                <!-- Lessons Accordion Item -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingLessons">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseLessons" aria-expanded="true" aria-controls="collapseLessons">
-                            Lessons
-                        </button>
-                    </h2>
-                    <div id="collapseLessons" class="accordion-collapse collapse show" aria-labelledby="headingLessons"
-                        data-bs-parent="#resourceAccordion">
-                        <div class="accordion-body">
-                            <div class="row g-4">
-                                <!-- Example A-Level Lesson on Regeneration -->
-                                <div class="col-md-6">
-                                    <div class="card h-100 shadow-sm">
-                                        <div class="card-body d-flex flex-column">
-                                            <h5 class="card-title">Example A-Level Lesson on Regeneration</h5>
-                                            <p class="card-text">Lesson on Regeneration for an Edexcel A-Level student
-                                                after consulting the PLC and creating a scheme of work to address the
-                                                gaps.</p>
-                                            <a href="static/resources/Fiona_Hennessy_co_uk_Example_Regeneration_Lesson.pdf"
-                                                class="btn btn-outline-primary mt-auto" download>
-                                                <i class="bi bi-download me-2"></i>Download PDF
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Example GCSE Lesson on Settlement -->
-                                <div class="col-md-6">
-                                    <div class="card h-100 shadow-sm">
-                                        <div class="card-body d-flex flex-column">
-                                            <h5 class="card-title">Example GCSE Lesson on Settlement</h5>
-                                            <p class="card-text">Lesson on Settlement for an Edexcel IGCSE student after
-                                                consulting the PLC and creating a scheme of work to address the gaps.
-                                            </p>
-                                            <a href="static/resources/Fiona_Hennessy_co_uk_GCSE_Example_Lesson_Settlement.pdf"
-                                                class="btn btn-outline-primary mt-auto" download>
-                                                <i class="bi bi-download me-2"></i>Download PDF
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Add more lesson cards as needed -->
-                            </div>
-                        </div>
+            <h2 class="parallax-section-title">What Parents Have Been Saying</h2>
+            <div class="row justify-content-center">
+                <!-- Testimonial 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"Fiona is an excellent tutor. She is very knowledgeable and patient. Her lessons
+                            are interesting and clarifying. We would highly recommend. Fiona, thank you for your help!"
+                        </p>
+                        <footer class="blockquote-footer text-end">Tatiana</footer>
                     </div>
                 </div>
-
-                <!-- Personal Learning Checklist (PLC) Accordion Item -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingPLC">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapsePLC" aria-expanded="false" aria-controls="collapsePLC">
-                            Personal Learning Checklist (PLC)
-                        </button>
-                    </h2>
-                    <div id="collapsePLC" class="accordion-collapse collapse" aria-labelledby="headingPLC"
-                        data-bs-parent="#resourceAccordion">
-                        <div class="accordion-body">
-                            <div class="row g-4">
-                                <!-- A-Level Water and Carbon Cycles PLC -->
-                                <div class="col-md-6">
-                                    <div class="card h-100 shadow-sm">
-                                        <div class="card-body d-flex flex-column">
-                                            <h5 class="card-title">A-Level Water and Carbon Cycles PLC</h5>
-                                            <a href="static/resources/Fiona_Hennessy_co_uk_Water_and_Carbon_Cycles_Specification_Content_PLC.pdf"
-                                                class="btn btn-outline-primary mt-auto" download>
-                                                <i class="bi bi-download me-2"></i>Download PDF
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- GCSE Hazardous Earth PLC -->
-                                <div class="col-md-6">
-                                    <div class="card h-100 shadow-sm">
-                                        <div class="card-body d-flex flex-column">
-                                            <h5 class="card-title">GCSE Hazardous Earth PLC</h5>
-                                            <a href="static/resources/Fiona_Hennessy_co_uk_Hazardous_Earth_PLC.pdf"
-                                                class="btn btn-outline-primary mt-auto" download>
-                                                <i class="bi bi-download me-2"></i>Download PDF
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Add more PLC cards as needed -->
-                            </div>
-                        </div>
+                <!-- Testimonial 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">“Fiona has been fantastic for my son resitting A level geography. She has been
+                            flexible and available at all times to answer questions and assist him. I cannot recommend
+                            her enough. Really strength in teaching how to hit a mark scheme and obtain those hard to
+                            hit high marks.”</p>
+                        <footer class="blockquote-footer text-end">Ushma</footer>
                     </div>
                 </div>
+                <!-- Testimonial 3 -->
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"Fiona has been tutoring my son (at GCSE level) for the past few months now. We
+                            have seen fantastic results already both in tests set within his school and his confidence
+                            to self study. Fiona is really knowledgeable about not only her subject but the exam
+                            techniques to reach full potential.
 
-                <!-- Quizzes and Other Resources Accordion Item -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingQuizzes">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseQuizzes" aria-expanded="false" aria-controls="collapseQuizzes">
-                            Quizzes & Other Resources
-                        </button>
-                    </h2>
-                    <div id="collapseQuizzes" class="accordion-collapse collapse" aria-labelledby="headingQuizzes"
-                        data-bs-parent="#resourceAccordion">
-                        <div class="accordion-body">
-                            <div class="row g-4">
-                                <!-- GCSE Urban Environment Glossary -->
-                                <div class="col-md-6">
-                                    <div class="card h-100 shadow-sm">
-                                        <div class="card-body d-flex flex-column">
-                                            <h5 class="card-title">GCSE Urban Environment Glossary</h5>
-                                            <a href="static/resources/Fiona_Hennessy_co_uk_Urban_Environments_Glossary.pdf"
-                                                class="btn btn-outline-primary mt-auto" download>
-                                                <i class="bi bi-download me-2"></i>Download PDF
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- A-Level Coast Quiz -->
-                                <div class="col-md-6">
-                                    <div class="card h-100 shadow-sm">
-                                        <div class="card-body d-flex flex-column">
-                                            <h5 class="card-title">A-Level Coast Quiz</h5>
-                                            <a href="static/resources/Fiona_Hennessy_co_uk_Example_Coasts_Quiz.pdf"
-                                                class="btn btn-outline-primary mt-auto" download>
-                                                <i class="bi bi-download me-2"></i>Download PDF
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- A-Level Exam Practice Migration -->
-                                <div class="col-md-6">
-                                    <div class="card h-100 shadow-sm">
-                                        <div class="card-body d-flex flex-column">
-                                            <h5 class="card-title">A-Level Exam Practice Migration</h5>
-                                            <p class="card-text">Pupil requested exam practice on this topic, so this
-                                                question was created for timed practice and immediate feedback.</p>
-                                            <a href="static/resources/Fiona_Hennessy_co_uk_Example_Exam_Practise_Migration.pdf"
-                                                class="btn btn-outline-primary mt-auto" download>
-                                                <i class="bi bi-download me-2"></i>Download PDF
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Add more quizzes/resources as needed -->
-                            </div>
-                        </div>
+                            My son really looks forward to each geography GCSE tutoring session with Fiona and I think
+                            the best feedback I could give is that he has started keeping notes of questions to ask
+                            Fiona in next sessions when he’s not quite sure of a topic in school. True testament to how
+                            approachable and passionate she is. Thank you so much Fiona for helping coax a reluctant
+                            learner out of his shell!"</p>
+                        <footer class="blockquote-footer text-end">Emily S.</footer>
                     </div>
                 </div>
+                <!-- Add more testimonials as needed -->
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Redesigned Testimonials Section -->
-    <section class="hero-parallax py-5" id="testimonials">
-        <div class="parallax-background"></div>
-        <div class="testimonials-overlay">
-            <div class="container">
-                <h2 class="parallax-section-title">What Parents Have Been Saying</h2>
-                <div class="row justify-content-center">
-                    <!-- Testimonial 1 -->
-                    <div class="col-md-6 mb-4">
-                        <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
-                            <p class="mb-3">"Fiona is an excellent tutor. She is very knowledgeable and patient. Her
-                                lessons are interesting and clarifying. We would highly recommend. Fiona, thank you for
-                                your help!"</p>
-                            <footer class="blockquote-footer text-end">Tatiana</footer>
-                        </div>
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div class="col-md-6 mb-4">
-                        <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
-                            <p class="mb-3">“Fiona has been fantastic for my son resitting A level geography. She has
-                                been flexible and available at all times to answer questions and assist him. I cannot
-                                recommend her enough. Really strength in teaching how to hit a mark scheme and obtain
-                                those hard to hit high marks.”</p>
-                            <footer class="blockquote-footer text-end">Ushma</footer>
-                        </div>
-                    </div>
-                    <!-- Testimonial 3 -->
-                    <div class="col-md-6 mb-4">
-                        <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
-                            <p class="mb-3">"Fiona has been tutoring my son (at GCSE level) for the past few months now
-                                . We have seen fantastic results already both in tests set within his school and his
-                                confidence to self study . Fiona is really knowledgeable about not only her subject but
-                                the exam techniques to reach full potential.
-
-
-                                My son really looks forward to each geography GCSE tutoring session with Fiona and I
-                                think the best feedback I could give is that he has started keeping notes of questions
-                                to ask Fiona in next sessions when he’s not quite sure of a topic in school . True
-                                testament to how approachable and passionate she is . Thankyou so much Fiona for helping
-                                coax a reluctant learner out of his shell !"</p>
-                            <footer class="blockquote-footer text-end">Emily S.</footer>
-                        </div>
-                    </div>
-                    <!-- Add more testimonials as needed -->
-                </div>
+<!-- Safeguarding Section -->
+<section class="safeguarding py-5" id="safeguarding">
+    <div class="container">
+        <h2 class="mb-3 fw-semibold">Safeguarding</h2>
+        <div class="row align-items-center">
+            <!-- Text Content -->
+            <div class="col-lg-8">
+                <p>I hold an enhanced full DBS check and subscribe to the update service to ensure it is kept up to date
+                    each year. I also undergo annual training on Keeping Children Safe in Education.</p>
+                <p>Students must be at least 18 years old to book a Tutor for themselves or another learner. Learners
+                    under the age of 18 must be represented by a parent or legal guardian who gives consent for them to
+                    receive tuition. All contact with pupils is via parental email addresses or numbers.</p>
+                <p>DBS available on request</p>
+            </div>
+            <!-- DBS Logo -->
+            <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                <img src="{{ '/static/images/dbs.png' | relative_url }}" alt="DBS Checked" class="img-fluid dbs-logo">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Safeguarding Section -->
-    <section class="safeguarding py-5" id="safeguarding">
-        <div class="container">
-            <h2 class="mb-3 fw-semibold">Safeguarding</h2>
-            <div class="row align-items-center">
-                <!-- Text Content -->
-                <div class="col-lg-8">
-                    <p>I hold an enhanced full DBS check and subscribe to the update service to ensure it is kept up to
-                        date each year. I also undergo annual training on Keeping Children Safe in Education.</p>
-                    <p>Students must be at least 18 years old to book a Tutor for themselves or another learner.
-                        Learners under the age of 18 must be represented by a parent or legal guardian who gives consent
-                        for them to receive tuition. All contact with pupils is via parental email addresses or numbers.
-                    </p>
-                    <p>DBS available on request</p>
-                </div>
-                <!-- DBS Logo -->
-                <div class="col-lg-4 text-center mt-4 mt-lg-0">
-                    <img src="static/images/dbs.png" alt="DBS Checked" class="img-fluid dbs-logo">
-                </div>
+<!-- Contact Form Section -->
+<section class="contact py-5" id="contact">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-semibold">Contact Fiona</h2>
+        <form action="#" method="post" class="mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name<span class="text-danger">*</span>:</label>
+                <input type="text" id="name" name="name" class="form-control" required aria-required="true">
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="contact py-5" id="contact">
-        <div class="container">
-            <h2 class="text-center mb-4 fw-semibold">Contact Fiona</h2>
-            <form action="#" method="post" class="mx-auto" style="max-width: 600px;">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name<span class="text-danger">*</span>:</label>
-                    <input type="text" id="name" name="name" class="form-control" required aria-required="true">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email<span class="text-danger">*</span>:</label>
-                    <input type="email" id="email" name="email" class="form-control" required aria-required="true">
-                </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message<span class="text-danger">*</span>:</label>
-                    <textarea id="message" name="message" rows="6" class="form-control" required
-                        aria-required="true"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Floating Contact Button -->
-    <a href="#contact" class="floating-contact" aria-label="Scroll to Contact">
-        <i class="bi bi-envelope-fill"></i>
-    </a>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <!-- Section Links -->
-            <ul class="list-inline">
-                <li class="list-inline-item"><a class="text-white" href="#about">About</a></li>
-                <li class="list-inline-item"><a class="text-white" href="#experience">Experience</a></li>
-                <li class="list-inline-item"><a class="text-white" href="#pricing">Pricing</a></li>
-                <li class="list-inline-item"><a class="text-white" href="#resources">Resources</a></li>
-                <li class="list-inline-item"><a class="text-white" href="#testimonials">Testimonials</a></li>
-                <li class="list-inline-item"><a class="text-white" href="#safeguarding">Safeguarding</a></li>
-                <li class="list-inline-item"><a class="text-white" href="#contact">Contact</a></li>
-            </ul>
-
-            <!-- Back to Top Link -->
-            <a href="#" class="text-white d-block mb-3">Back to top</a>
-
-            <!-- Copyright -->
-            <p>&copy; 2023 Fiona Hennessy Tutoring. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS (including Popper.js for Bootstrap components) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- JavaScript to Close Navbar on Link Click in Mobile View -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Select the navbar collapse element
-            var navbarCollapse = document.getElementById('navbarNav');
-
-            // Initialize Bootstrap Collapse
-            var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                toggle: false
-            });
-
-            // Select all nav links inside the navbar
-            var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-
-            // Add click event listener to each nav link
-            navLinks.forEach(function (link) {
-                link.addEventListener('click', function () {
-                    // Check if the navbar toggler is visible (i.e., in mobile view)
-                    if (window.getComputedStyle(document.querySelector('.navbar-toggler')).display !== 'none') {
-                        // Collapse the navbar
-                        bsCollapse.hide();
-                    }
-                });
-            });
-        });
-    </script>
-</body>
-
-</html>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email<span class="text-danger">*</span>:</label>
+                <input type="email" id="email" name="email" class="form-control" required aria-required="true">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message<span class="text-danger">*</span>:</label>
+                <textarea id="message" name="message" rows="6" class="form-control" required
+                    aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+    </div>
+</section>
