@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Advantages of Geography Tutoring with an Examiner and Assessment Creator"
+description: "Learn the benefits of geography tutoring with an examiner and assessment writer for improved exam prep and confidence."
 date: 2024-01-10
 author: Fiona Hennessy
 ---

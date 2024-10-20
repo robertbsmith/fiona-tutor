@@ -2,10 +2,11 @@
 layout: default
 title: Home
 ---
+<!-- index.html -->
 
 <!-- Hero Section -->
 <section
-    class="hero text-white text-center d-flex flex-column justify-content-center align-items-center position-relative">
+    class="hero text-white text-center d-flex flex-column justify-content-center align-items-center position-relative" style="width: 100%; height: 100vh;">
     <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
     <div class="container-fluid position-relative">
         <h1 class="display-4 fw-bold">Fiona Hennessy Tutoring</h1>
@@ -20,15 +21,15 @@ title: Home
         <div class="row align-items-center">
             <!-- Desktop Image -->
             <div class="col-lg-5 mb-4 d-none d-lg-block">
-                <img src="{{ '/static/images/fiona.webp' | relative_url }}" alt="Fiona Hennessy"
-                    class="img-fluid rounded shadow">
+                <img src="{{ '/static/images/fiona.webp' | relative_url }}" loading="lazy" alt="Fiona Hennessy"
+                    class="img-fluid rounded shadow" width="376" height="454">
             </div>
             <!-- Content -->
             <div class="col-lg-7">
                 <h2 class="fw-semibold mb-4">About Me</h2>
                 <!-- Mobile Image -->
                 <div class="d-block d-lg-none mb-4 text-center">
-                    <img src="{{ '/static/images/fiona-small.png' | relative_url }}" alt="Fiona Hennessy"
+                    <img src="{{ '/static/images/fiona-small.webp' | relative_url }}" loading="lazy" alt="Fiona Hennessy"
                         class="img-fluid rounded-circle shadow" style="width: 150px; height: 150px; object-fit: cover;">
                 </div>
                 <p class="lh-lg">Geography teacher, published revision resources writer, lead exam writer for a major
@@ -79,7 +80,7 @@ title: Home
                                 <!-- Edexcel Row -->
                                 <tr>
                                     <td class="d-flex justify-content-center align-items-center">
-                                        <img src="{{ '/static/images/edexcel.png' | relative_url }}" alt="Edexcel"
+                                        <img src="{{ '/static/images/edexcel.webp' | relative_url }}" alt="Edexcel"
                                             class="img-fluid exam-board-logo">
                                     </td>
                                     <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
@@ -88,7 +89,7 @@ title: Home
                                 <!-- OCR Row -->
                                 <tr class="bg-light">
                                     <td class="d-flex justify-content-center align-items-center">
-                                        <img src="{{ '/static/images/OCR.png' | relative_url }}" alt="OCR"
+                                        <img src="{{ '/static/images/OCR.webp' | relative_url }}" alt="OCR"
                                             class="img-fluid exam-board-logo">
                                     </td>
                                     <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
@@ -97,7 +98,7 @@ title: Home
                                 <!-- Cambridge International Row -->
                                 <tr>
                                     <td class="d-flex justify-content-center align-items-center">
-                                        <img src="{{ '/static/images/cambridge-international.png' | relative_url }}"
+                                        <img src="{{ '/static/images/cambridge-international.webp' | relative_url }}"
                                             alt="Cambridge International" class="img-fluid exam-board-logo">
                                     </td>
                                     <td><i class="bi bi-check-circle-fill text-success fs-4"></i></td>
@@ -263,12 +264,12 @@ title: Home
         <div class="accordion" id="resourceAccordion">
             <!-- Lessons Accordion Item -->
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingLessons">
+                <h3 class="accordion-header" id="headingLessons">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseLessons" aria-expanded="true" aria-controls="collapseLessons">
                         Lessons
                     </button>
-                </h2>
+                </h3>
                 <div id="collapseLessons" class="accordion-collapse collapse show" aria-labelledby="headingLessons"
                     data-bs-parent="#resourceAccordion">
                     <div class="accordion-body">
@@ -277,7 +278,7 @@ title: Home
                             <div class="col-md-6">
                                 <div class="card h-100 shadow-sm">
                                     <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Example A-Level Lesson on Regeneration</h5>
+                                        <h4 class="card-title">Example A-Level Lesson on Regeneration</h4>
                                         <p class="card-text">Lesson on Regeneration for an Edexcel A-Level student after
                                             consulting the PLC and creating a scheme of work to address the gaps.</p>
                                         <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_Example_Regeneration_Lesson.pdf' | relative_url }}"
@@ -291,7 +292,7 @@ title: Home
                             <div class="col-md-6">
                                 <div class="card h-100 shadow-sm">
                                     <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">Example GCSE Lesson on Settlement</h5>
+                                        <h4 class="card-title">Example GCSE Lesson on Settlement</h4>
                                         <p class="card-text">Lesson on Settlement for an Edexcel IGCSE student after
                                             consulting the PLC and creating a scheme of work to address the gaps.</p>
                                         <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_GCSE_Example_Lesson_Settlement.pdf' | relative_url }}"
@@ -309,12 +310,12 @@ title: Home
 
             <!-- Personal Learning Checklist (PLC) Accordion Item -->
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingPLC">
+                <h3 class="accordion-header" id="headingPLC">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapsePLC" aria-expanded="false" aria-controls="collapsePLC">
                         Personal Learning Checklist (PLC)
                     </button>
-                </h2>
+                </h3>
                 <div id="collapsePLC" class="accordion-collapse collapse" aria-labelledby="headingPLC"
                     data-bs-parent="#resourceAccordion">
                     <div class="accordion-body">
@@ -323,7 +324,7 @@ title: Home
                             <div class="col-md-6">
                                 <div class="card h-100 shadow-sm">
                                     <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">A-Level Water and Carbon Cycles PLC</h5>
+                                        <h4 class="card-title">A-Level Water and Carbon Cycles PLC</h4>
                                         <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_Water_and_Carbon_Cycles_Specification_Content_PLC.pdf' | relative_url }}"
                                             class="btn btn-outline-primary mt-auto" download>
                                             <i class="bi bi-download me-2"></i>Download PDF
@@ -335,7 +336,7 @@ title: Home
                             <div class="col-md-6">
                                 <div class="card h-100 shadow-sm">
                                     <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">GCSE Hazardous Earth PLC</h5>
+                                        <h4 class="card-title">GCSE Hazardous Earth PLC</h4>
                                         <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_Hazardous_Earth_PLC.pdf' | relative_url }}"
                                             class="btn btn-outline-primary mt-auto" download>
                                             <i class="bi bi-download me-2"></i>Download PDF
@@ -351,12 +352,12 @@ title: Home
 
             <!-- Quizzes and Other Resources Accordion Item -->
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingQuizzes">
+                <h3 class="accordion-header" id="headingQuizzes">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseQuizzes" aria-expanded="false" aria-controls="collapseQuizzes">
                         Quizzes & Other Resources
                     </button>
-                </h2>
+                </h3>
                 <div id="collapseQuizzes" class="accordion-collapse collapse" aria-labelledby="headingQuizzes"
                     data-bs-parent="#resourceAccordion">
                     <div class="accordion-body">
@@ -365,7 +366,7 @@ title: Home
                             <div class="col-md-6">
                                 <div class="card h-100 shadow-sm">
                                     <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">GCSE Urban Environment Glossary</h5>
+                                        <h4 class="card-title">GCSE Urban Environment Glossary</h4>
                                         <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_Urban_Environments_Glossary.pdf' | relative_url }}"
                                             class="btn btn-outline-primary mt-auto" download>
                                             <i class="bi bi-download me-2"></i>Download PDF
@@ -377,7 +378,7 @@ title: Home
                             <div class="col-md-6">
                                 <div class="card h-100 shadow-sm">
                                     <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">A-Level Coast Quiz</h5>
+                                        <h4 class="card-title">A-Level Coast Quiz</h4>
                                         <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_Example_Coasts_Quiz.pdf' | relative_url }}"
                                             class="btn btn-outline-primary mt-auto" download>
                                             <i class="bi bi-download me-2"></i>Download PDF
@@ -389,7 +390,7 @@ title: Home
                             <div class="col-md-6">
                                 <div class="card h-100 shadow-sm">
                                     <div class="card-body d-flex flex-column">
-                                        <h5 class="card-title">A-Level Exam Practice Migration</h5>
+                                        <h4 class="card-title">A-Level Exam Practice Migration</h4>
                                         <p class="card-text">Pupil requested exam practice on this topic, so this
                                             question was created for timed practice and immediate feedback.</p>
                                         <a href="{{ '/static/resources/Fiona_Hennessy_co_uk_Example_Exam_Practise_Migration.pdf' | relative_url }}"
@@ -473,7 +474,7 @@ title: Home
             </div>
             <!-- DBS Logo -->
             <div class="col-lg-4 text-center mt-4 mt-lg-0">
-                <img src="{{ '/static/images/dbs.png' | relative_url }}" alt="DBS Checked" class="img-fluid dbs-logo">
+                <img src="{{ '/static/images/dbs.webp' | relative_url }}" alt="DBS Checked" class="img-fluid dbs-logo">
             </div>
         </div>
     </div>
