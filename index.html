@@ -10,9 +10,16 @@ title: Home
     <div class="container-fluid position-relative">
         <h1 class="display-4 fw-bold">Fiona Hennessy Tutoring</h1>
         <p class="lead mb-4">Providing Quality Geography Tutoring to A-Level and GCSE Students</p>
-        <a href="#contact" class="btn btn-lg btn-primary">Contact Fiona</a>
+        <div class="d-flex flex-column align-items-center" style="max-width: 300px; margin: 0 auto;">
+            <a href="#contact" class="btn btn-lg btn-primary w-100">Contact Fiona</a>
+            <div class="or-divider w-100 my-3">
+                <span class="or text-light">OR</span>
+            </div>
+            <button class="btn btn-lg btn-primary w-100" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/fiona-hennessy-tutoring/30min'});return false;">Schedule an Appointment</button>
+        </div>
     </div>
 </section>
+
 
 <!-- About Section -->
 <section class="about py-5" id="about">
@@ -477,31 +484,5 @@ title: Home
                 <img src="{{ '/static/images/dbs.webp' | relative_url }}" alt="DBS Checked" class="img-fluid dbs-logo">
             </div>
         </div>
-    </div>
-</section>
-
-<!-- Contact Form Section -->
-<section class="contact py-5" id="contact">
-    <div class="container">
-        <h2 class="text-center mb-4 fw-semibold">Contact Fiona</h2>
-        <form action="#" method="post" class="mx-auto" style="max-width: 600px;">
-            <div class="mb-3">
-                <label for="name" class="form-label">Name<span class="text-danger">*</span>:</label>
-                <input type="text" id="name" name="name" class="form-control" required aria-required="true" autocomplete="name">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email<span class="text-danger">*</span>:</label>
-                <input type="email" id="email" name="email" class="form-control" required aria-required="true" autocomplete="email">
-            </div>
-            <div class="mb-3">
-                <label for="phone" class="form-label">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" class="form-control" autocomplete="tel">
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message<span class="text-danger">*</span>:</label>
-                <textarea id="message" name="message" rows="6" class="form-control" required aria-required="true"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Send Message</button>
-        </form>
     </div>
 </section>

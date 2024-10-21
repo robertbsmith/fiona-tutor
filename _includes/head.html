@@ -5,6 +5,7 @@
 
 <meta name="description"
   content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+{% feed_meta %}
 
 <!-- Preconnect to external domains -->
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -25,6 +26,9 @@
 <!-- Preload Custom CSS -->
 <link rel="preload" href="{{ '/static/css/styles.css' | relative_url }}" as="style">
 <link rel="stylesheet" href="{{ '/static/css/styles.css' | relative_url }}">
+
+<!-- Calendly widget CSS -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
 <style>
   /* Inline Critical CSS */
