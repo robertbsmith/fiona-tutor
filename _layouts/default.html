@@ -2,24 +2,23 @@
 <!-- _layouts/default.html -->
 <html lang="en">
 
-<head>
-  {% include head.html %}
-</head>
+{% include_cached head.html %}
 
 <body class="bg-light">
-  {% include navbar.html %}
+  {% include_cached navbar.html %}
 
   {{ content }}
 
-  {% include floating-contact.html %}
+  {% include_cached floating-contact.html %}
 
-  {% include contact.html %}
+  {% include_cached contact.html %}
   
-  {% include footer.html %}
+  {% include_cached footer.html %}
 
-  {% include floating-contact.html %}
+  {% include_cached floating-contact.html %}
 
-  {% include scripts.html %}
+  {% include_cached scripts.html %}
+
 </body>
 
 </html>
