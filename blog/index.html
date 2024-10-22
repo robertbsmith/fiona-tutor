@@ -8,39 +8,40 @@ last_modified_at: 2024-10-22
 <!-- blog/index.html -->
 <!-- Hero Parallax Section -->
 <section class="hero-parallax blog-hero-parallax">
-    <div class="parallax-background"></div>
-    <h1 class="parallax-section-title">Fiona's Blog</h1>
+  <div class="parallax-background"></div>
+  <h1 class="parallax-section-title">Fiona's Blog</h1>
 </section>
 
 <div class="container py-5">
-    {% for post in site.posts %}
-    <article class="mb-5">
-        <!-- Post Title -->
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+  {% for post in site.posts %}
+  <article class="mb-5">
+    <!-- Post Title -->
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
 
-        <!-- Post Date and Author -->
-        <p class="text-muted">
-            {{ post.date | date: "%B %-d, %Y" }}
-            {% if post.author %}
-            | {{ post.author }}
-            {% endif %}
-        </p>
+    <!-- Post Date and Author -->
+    <p class="text-muted">
+      {{ post.date | date: "%B %-d, %Y" }}
+      {% if post.author %}
+      | {{ post.author }}
+      {% endif %}
+    </p>
 
-        <!-- Post Excerpt -->
-        <div>
-            {% assign excerpt_length = 2000 %}
-            {% assign content_strip = post.content %}
-            {% assign content_size = content_strip | size %}
-            
-            {% if content_size > excerpt_length %}
-              {% assign truncated_content = content_strip | truncate: excerpt_length, "" %}
-              {{ truncated_content }}...
-              <a href="{{ post.url | relative_url }}" aria-label="Continue reading '{{ post.title }}'">
-                Continue reading <span class="sr-only">'{{ post.title }}'</span>
-              </a></p>
-            {% else %}
-              {{ post.content }}
-            {% endif %}
-    </article>
-    {% endfor %}
+    <!-- Post Excerpt -->
+    <div>
+      {% assign excerpt_length = 2000 %}
+      {% assign content_strip = post.content %}
+      {% assign content_size = content_strip | size %}
+
+      {% if content_size > excerpt_length %}
+      {% assign truncated_content = content_strip | truncate: excerpt_length, "" %}
+      {{ truncated_content }}...
+      <a href="{{ post.url | relative_url }}" aria-label="Continue reading '{{ post.title }}'">
+        Continue reading <span class="sr-only">'{{ post.title }}'</span>
+      </a></p>
+      {% else %}
+      {{ post.content }}
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
 </div>
