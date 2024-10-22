@@ -1,9 +1,9 @@
 # config.yml
 permalink: /blog/:year/:month/:day/:title
-title: Fiona Hennessy Tutoring
-tagline: Quality GCSE and A-Level Geography Tutoring
+title: "Fiona Hennessy Tutoring"
+tagline: "Quality GCSE and A-Level Geography Tutoring"
 description: "Fiona Hennessy offers expert Geography tutoring for A-Level and GCSE students with a focus on exam success and pupil progress."
-author: Fiona Hennessy
+author: "Fiona Hennessy"
 image: static/images/fiona-small.webp
 url: "https://fionahennessy.co.uk"
 locale: en_GB
