@@ -67,7 +67,7 @@ section {
     height: 100vh;
     position: relative;
     background: #f0f0f0
-        url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wAARCAAaACgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAQX/xAAcEAACAgMBAQAAAAAAAAAAAAAAAQRRAxJhERP/xAAXAQEAAwAAAAAAAAAAAAAAAAAAAQID/8QAFhEBAQEAAAAAAAAAAAAAAAAAABES/9oADAMBAAIRAxEAPwDrbBsSLOrGWZWVy2U+m7Ev2VmPOrEFWwEbzqwEHLUjo6kdIUMjVSrXI6I5HSZiMgqlyHYEoBFf/9k=)
+        url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/wAARCAAaACgDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAQX/xAAcEAACAgMBAQAAAAAAAAAAAAAAAQRRAxJhERP/xAAXAQEAAwAAAAAAAAAAAAAAAAAAAQID/8QAFhEBAQEAAAAAAAAAAAAAAAAAABES/9oADAMBAAIRAxEAPwDrbBsSLOrGWZWVy2U+m7Ev2VmPOrEFWwEbzqwEHLUjo6kdIUMjVSrXI6I5HSZiMgqlyHYEoBFf/9k=)
         center center/cover no-repeat;
 }
 .hero::before {
@@ -380,18 +380,3 @@ section {
     break-inside: avoid; /* Prevents testimonials from breaking across columns */
 }
 
-/* Results History Page Tables */
-.results-table {
-    table-layout: fixed; /* Crucial for consistent column widths */
-    width: 100%;
-}
-
-.results-table th:nth-child(1) { width: 15%; white-space: nowrap; } /* Student */
-.results-table th:nth-child(2) { width: 18%; } /* Grade at start */
-.results-table th:nth-child(3) { width: 15%; } /* Grade Achieved */
-.results-table th:nth-child(4) { width: 15%; } /* Grade change */
-.results-table th:nth-child(5) { width: 37%; } /* Notes */
-
-.results-table td {
-    word-wrap: break-word; /* Allows long text in Notes to wrap */
-}
