@@ -331,3 +331,67 @@ section {
     height: 1px;
     margin: 0 10px;
 }
+.back-to-blog {
+    text-decoration: none;
+}
+/* Stat Cards Section */
+.stat-card-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.stat-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    flex-grow: 1;
+    min-width: 150px;
+}
+.stat-value {
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #212529;
+}
+.stat-caption {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #6c757d;
+    letter-spacing: 0.5px;
+}
+
+/* Testimonials Masonry Layout */
+.testimonial-grid {
+    column-gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .testimonial-grid {
+        column-count: 2;
+    }
+}
+
+.testimonial-grid > * {
+    break-inside: avoid; /* Prevents testimonials from breaking across columns */
+}
+
+/* Results History Page Tables */
+.results-table {
+    table-layout: fixed; /* Crucial for consistent column widths */
+    width: 100%;
+}
+
+.results-table th:nth-child(1) { width: 15%; white-space: nowrap; } /* Student */
+.results-table th:nth-child(2) { width: 18%; } /* Grade at start */
+.results-table th:nth-child(3) { width: 15%; } /* Grade Achieved */
+.results-table th:nth-child(4) { width: 15%; } /* Grade change */
+.results-table th:nth-child(5) { width: 37%; } /* Notes */
+
+.results-table td {
+    word-wrap: break-word; /* Allows long text in Notes to wrap */
+}

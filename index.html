@@ -17,7 +17,9 @@ last_modified_at: 2024-10-22
             <div class="or-divider w-100 my-3">
                 <span class="or text-light">OR</span>
             </div>
-            <button class="btn btn-lg btn-primary w-100" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/fiona-hennessy-tutoring/30min'});return false;">Schedule an Appointment</button>
+            <button class="btn btn-lg btn-primary w-100"
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/fiona-hennessy-tutoring/30min'});return false;">Schedule
+                an Appointment</button>
         </div>
     </div>
 </section>
@@ -134,18 +136,65 @@ last_modified_at: 2024-10-22
             grades that they receive when entering secondary school.</p>
         <ul class="list-unstyled">
             <li><i class="bi bi-graph-up-arrow text-primary me-2 fs-5"></i>GCSE pupils that took my class achieved
-                <strong>2.42 grades higher</strong> than they would have with an average UK teacher.
+                <strong>2.4 grades higher</strong> than they would have with an average UK teacher.
             </li>
             <li><i class="bi bi-graph-up-arrow text-primary me-2 fs-5"></i><strong>89%</strong> of my A-level students
                 have received <strong>A*-B</strong>, and none have failed.</li>
-            <li><i class="bi bi-graph-up-arrow text-primary me-2 fs-5"></i>In the 2022-2023 private tutoring cohort, all
-                of my GCSE or A-Level students that were with me for more than 8 sessions were on or above target
-                grade, with some students achieving up to <strong>2 grades higher</strong> at A-Level.</li>
         </ul>
+        <h4 class="fw-semibold mt-4">Tutoring Results:</h4>
+        <div class="stat-card-strip">
+            <div class="stat-card">
+                <div class="stat-value">64%</div>
+                <div class="stat-caption">A LEVEL A-A*</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">100%</div>
+                <div class="stat-caption">A LEVEL A-B*</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">83%</div>
+                <div class="stat-caption">GCSE 7–9</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">1.7 grades</div>
+                <div class="stat-caption">AVG UPLIFT (A LEVEL)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">2.3 grades</div>
+                <div class="stat-caption">AVG UPLIFT (GCSE)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">100%</div>
+                <div class="stat-caption">NO DECLINES</div>
+            </div>
+        </div>
+
         <p>These results include pupils with Special Education Needs and Disabilities, pupils with English as an
             additional language, pupils with mental health, emotional and social needs, gifted and talented
             pupils/high ability pupils, and pupils who find it difficult to adapt their way of thinking and
-            behaviour to conventional education settings.</p>
+            behaviour to conventional education settings. Here are my results for SEND pupils:</p>
+        <div class="stat-card-strip">
+            <div class="stat-card">
+                <div class="stat-value">2.2 grades</div>
+                <div class="stat-caption">A LEVEL (SEN MEAN)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">1.4 grades</div>
+                <div class="stat-caption">A LEVEL (NON-SEN MEAN)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">2.5 grades</div>
+                <div class="stat-caption">GCSE (SEN MEAN)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">2.3 grades</div>
+                <div class="stat-caption">GCSE (NON-SEN MEAN)</div>
+            </div>
+        </div>
+        <p>For my history of results please click <a href="{{ '/results-history.html' | relative_url }}">here</a>.</p>
+        <p class="small text-muted mt-3">*SEN (Special Educational Needs) and SEND (Special Educational Needs and
+            Disabilities) are terms used to describe pupils who require additional support to overcome barriers to
+            learning.</p>
     </div>
 
     <div class="container">
@@ -425,9 +474,9 @@ last_modified_at: 2024-10-22
     <div class="testimonials-overlay">
         <div class="container">
             <h2 class="parallax-section-title">What Parents Have Been Saying</h2>
-            <div class="row justify-content-center">
-                <!-- Testimonial 1 -->
-                <div class="col-md-6 mb-4">
+            <div class="testimonial-grid">
+                <!-- Testimonial -->
+                <div class="mb-4">
                     <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
                         <p class="mb-3">"Fiona is an excellent tutor. She is very knowledgeable and patient. Her lessons
                             are interesting and clarifying. We would highly recommend. Fiona, thank you for your help!"
@@ -435,8 +484,8 @@ last_modified_at: 2024-10-22
                         <footer class="blockquote-footer text-end">Tatiana</footer>
                     </div>
                 </div>
-                <!-- Testimonial 2 -->
-                <div class="col-md-6 mb-4">
+                <!-- Testimonial -->
+                <div class="mb-4">
                     <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
                         <p class="mb-3">“Fiona has been fantastic for my son resitting A level geography. She has been
                             flexible and available at all times to answer questions and assist him. I cannot recommend
@@ -445,20 +494,144 @@ last_modified_at: 2024-10-22
                         <footer class="blockquote-footer text-end">Ushma</footer>
                     </div>
                 </div>
-                <!-- Testimonial 3 -->
-                <div class="col-md-6 mb-4">
+                <!-- Testimonial -->
+                <div class="mb-4">
                     <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
                         <p class="mb-3">"Fiona has been tutoring my son (at GCSE level) for the past few months now. We
                             have seen fantastic results already both in tests set within his school and his confidence
                             to self study. Fiona is really knowledgeable about not only her subject but the exam
-                            techniques to reach full potential.
-
-                            My son really looks forward to each geography GCSE tutoring session with Fiona and I think
+                            techniques to reach full potential. My son really looks forward to each geography GCSE
+                            tutoring session with Fiona and I think
                             the best feedback I could give is that he has started keeping notes of questions to ask
                             Fiona in next sessions when he’s not quite sure of a topic in school. True testament to how
                             approachable and passionate she is. Thank you so much Fiona for helping coax a reluctant
                             learner out of his shell!"</p>
                         <footer class="blockquote-footer text-end">Emily S.</footer>
+                    </div>
+                </div>
+                <!-- Testimonial -->
+                <div class="mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"Fiona was an outstanding tutor who provided exceptional support for my A-level
+                            Geography exams. Her clear explanations, patience, and encouragement made every session both
+                            effective and enjoyable. I couldn’t have asked for a better tutor. Thank you Fiona."</p>
+                        <footer class="blockquote-footer text-end">Eli</footer>
+                    </div>
+                </div>
+                <!-- Testimonial -->
+                <div class="mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"tutored with Fiona for 10 months in preparation to sit my Geography A-Level.
+                            She is a fantastic tutor and would strongly recommend to anyone. She has a very clear and
+                            concise way of teaching and it is clear that a significant amount of effort goes into both
+                            lesson prep and setting work to do outside of lessons. Her extremely in-depth understanding
+                            of the subject and the exams shines through in the lessons, and she is effective at honing
+                            in on any areas where your exam technique may be lacking. I would have struggled massively
+                            without her help, and I strongly recommend Fiona to anyone considering geography tutoring,
+                            especially if you are taking AQA, however, I don't doubt that she is also extremely
+                            knowledgeable about the other exam boards as well."</p>
+                        <footer class="blockquote-footer text-end">Saood</footer>
+                    </div>
+                </div>
+                <!-- Testimonial -->
+                <div class="mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"Fiona was super helpful with some last minute bolstering of content for our
+                            daughter taking Geog A'Level. Personable and knowledgeable across the board, including some
+                            esoteric areas that very few people know about, turns out Fiona has a speciality in.
+                            Daughter was delighted!"</p>
+                        <footer class="blockquote-footer text-end">Hannah</footer>
+                    </div>
+                </div>
+                <!-- Testimonial -->
+                <div class="mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"Fiona is a superb A level geography tutor .as she is also an A level examiner
+                            she has great depth of knowledge in this field providing my daughter with clear , organised
+                            , dedicated support in building her knowledge in her geography A level along with structured
+                            practice for exam technique questions ! My daughter really enjoys Fiona’s tutition helping
+                            her build her confidence and knowledge in the subject ! I would nightly recommend Fiona."
+                        </p>
+                        <footer class="blockquote-footer text-end">Sinead</footer>
+                    </div>
+                </div>
+                <!-- Testimonial -->
+                <div class="mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"Fiona has been an outstanding A-level tutor for our daughter. As well as
+                            exceptional subject matter knowledge, we know that Fiona will have given our daughter all
+                            the tools that she needs to tackle the exam, and fulfil her grade potential."</p>
+                        <footer class="blockquote-footer text-end">Karim</footer>
+                    </div>
+                </div>
+                <!-- Testimonial -->
+                <div class="mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"Fiona has been an amazing A level tutor for our teenager. She plans lessons
+                            meticulously, is an expert in her feedback and know the curriculum inside out, is flexible
+                            where we need it and provides great feedback. I am so glad we found her. Would highly
+                            recommend."</p>
+                        <footer class="blockquote-footer text-end">Lucy</footer>
+                    </div>
+                </div>
+                <!-- Testimonial -->
+                <div class="mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"Fiona has been fantastic and has hugely helped our daughter with her A Level
+                            Geography work. She is very organised and thorough in her approach and is preparing our
+                            daughter exceptionally well for her exams."</p>
+                        <footer class="blockquote-footer text-end">Steven</footer>
+                    </div>
+                </div>
+                <!-- Testimonial -->
+                <div class="mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"We are so grateful that we found Fiona just before our sons A-levels. Our
+                            biggest regret is that we did not start sooner! It definitely made a big difference and
+                            would highly recommend Fiona."</p>
+                        <footer class="blockquote-footer text-end">Rebecca</footer>
+                    </div>
+                </div>
+                <!-- Testimonial -->
+                <div class="mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"We engaged Fiona to help our Son with his upcoming GCSE Geography exams. We
+                            have been incredibly impressed with not only Fiona’s knowledge in her field but her truly
+                            in-depth understanding of the curriculum and the exam requirements for GSCE. The preparation
+                            Fiona puts in for the tutoring is outstanding, each session tailored to our Sons
+                            requirements and learning style. In preparation for the exams Fiona has literally covered
+                            every conceivable way in which a question might be asked on a sub topic and coached on how
+                            to answer for maximum marks. Our sons lessons have been intense and much has needed to be
+                            covered but Fiona has not been daunted and she has managed to keep our Son engaged and been
+                            nothing but encouraging to a teenager who was disenchanted with the subject. Fiona provides
+                            feedback on progress to us and has given our Son every opportunity to succeed. Our Son finds
+                            Fiona easy to talk to and she has such a clear and concise way of communicating the subject
+                            matter. A truly fortunate find and we highly recommend her to any parent…… we just wish we’d
+                            engaged her sooner!"</p>
+                        <footer class="blockquote-footer text-end">Sharon</footer>
+                    </div>
+                </div>
+                <!-- Testimonial -->
+                <div class="mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"Fiona has proven to be a great tutor, with both extensive expertise in
+                            geography and exceptional teaching skills. She has tailored her lessons to address my son's
+                            specific needs, greatly enhancing his preparation for the GCSE exams. Thanks to Fiona's
+                            guidance, my son's understanding and confidence in geography have significantly improved. I
+                            wholeheartedly recommend Fiona to anyone seeking an enthusiastic, engaging, and professional
+                            geography tutor."</p>
+                        <footer class="blockquote-footer text-end">Anonymous</footer>
+                    </div>
+                </div>
+                <!-- Testimonial -->
+                <div class="mb-4">
+                    <div class="testimonial-box p-4 bg-white bg-opacity-75 rounded shadow">
+                        <p class="mb-3">"Fiona has been an incredible tutor and one I would go out of my way to
+                            recommend. Her knowledge as an examiner and exam writer provide her unparalleled knowledge
+                            into the spec and ways that questions can be throw at you. She works very hard on the pre
+                            planning of the lessons, and the lesson time is used very efficiently with lots covered.
+                            100% recommend to anyone at any ability, especially if aiming for an A*."</p>
+                        <footer class="blockquote-footer text-end">Anonymous</footer>
                     </div>
                 </div>
                 <!-- Add more testimonials as needed -->
