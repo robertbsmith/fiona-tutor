@@ -4,6 +4,7 @@ title: "The Advantages of Geography Tutoring with an Examiner and Assessment Cre
 description: "Learn the benefits of geography tutoring with an examiner and assessment writer for improved exam prep and confidence."
 date: 2024-01-10
 author: Fiona Hennessy
+published: false
 ---
 The pivotal role of a tutor becomes a compass guiding them through the intricate terrain of geography exams. While one-on-one tutoring has long been recognized for its effectiveness, the added benefits when your child's geography tutor is not only an experienced examiner but also a skilled assessment writer. The distinctive advantages of 1-1 geography tutoring with a tutor who wears both hats – an examiner and an assessment writer – and how this tailored approach enhances the learning experience for your child in the captivating world of geography.
 
